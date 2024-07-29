@@ -113,6 +113,8 @@ int main() {
 
 ## Documentation
 
+Tutorials for all cpplex modules and detailed documentation for every function is available on the read the docs page [here](https://cpplex.readthedocs.io/en/latest/).
+
 ## Benchmarks
 
 ## Future Plans 
