@@ -8,6 +8,83 @@ Regardless of whether you need tools for scientific computing, signal processing
 
 ## Usage 
 
+Cpplex is a header only library, meaning no source files or shared object files are required for compilation. 
+
+### The Cpplex Complex Datatype
+
+Begin by including the header files of the content you wish to use:
+
+```cpp
+#include <Complex/Complex.hpp>
+#include <Special/Special.hpp>
+#include <iostream>
+int main() {
+
+}
+```
+
+Cpplex allows you to use standard C++ complex literals, as well as our own:
+
+```cpp
+#include <Complex/Complex.hpp>
+#include <Special/Special.hpp>
+#include <iostream>
+int main() {
+  Complex z = 5 + 5_j;
+  Complex w = 5 + 5i;
+}
+```
+
+And you can call functions using this type like so:
+
+```cpp
+#include <Complex/Complex.hpp>
+#include <Special/Special.hpp>
+#include <iostream>
+int main() {
+  Complex z = 5 + 5_j;
+  Complex gammaZ = gamma(z);
+}
+```
+
+### Functions in Cpplex
+
+Various functions in cpplex, including the derivative, integral, and continuous entropy functions, require you to use functions of complex inputs. Here's how cpplex handles them.
+
+You can either create complex functions by using lambdas or C++ functions:
+
+```cpp
+#include <Complex/Complex.hpp>
+#include <iostream>
+
+Complex f(Complex z) {
+    return z*z; 
+}
+
+int main() {
+
+  auto g = [](Complex z) { return z*z };
+
+}
+```
+
+Then you can call the relevant function by passing your Complex function as a function pointer:
+
+```cpp
+#include <Complex/Complex.hpp>
+#include <NumericalAnalysis/NumericalAnalysis.hpp>
+#include <iostream>
+
+int main() {
+  Complex z = 1 + 1_j;
+  auto g = [](Complex z) { return z*z };
+  Complex dgdz = derivative(g, z); // Derivative of g evaluated at z.
+
+}
+```
+
+### Complex Sequences in Cpplex
+
 ## Documentation
 
 ## Benchmarks
