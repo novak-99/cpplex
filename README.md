@@ -94,7 +94,7 @@ int main() {
 
 Other functions, including discrete transforms and discrete entropy functions, will require complex sequences as input. 
 
-Complex sequences are currently supported in cpplex by using the ```cpp std::vector<Complex>``` datatype, but they will be later swapped out for a vectorized cpplex vector type. 
+Complex sequences are currently supported in cpplex by using the ```std::vector<Complex>``` datatype, but they will be later swapped out for a vectorized cpplex vector type. 
 
 And so, complex sequences can be implemented in cpplex as such:
 
