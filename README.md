@@ -30,6 +30,9 @@ Cpplex allows you to use standard C++ complex literals, as well as our own:
 #include <Complex/Complex.hpp>
 #include <Special/Special.hpp>
 #include <iostream>
+
+using namespace std::complex_literals; // for C++'s literals
+
 int main() {
   Complex z = 5 + 5_j;
   Complex w = 5 + 5i;
