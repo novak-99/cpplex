@@ -20,6 +20,7 @@ Begin by including the header files of the content you wish to use:
 #include <iostream>
 int main() {
 
+  return 0;
 }
 ```
 
@@ -32,6 +33,8 @@ Cpplex allows you to use standard C++ complex literals, as well as our own:
 int main() {
   Complex z = 5 + 5_j;
   Complex w = 5 + 5i;
+
+  return 0;
 }
 ```
 
@@ -44,6 +47,8 @@ And you can call functions using this type like so:
 int main() {
   Complex z = 5 + 5_j;
   Complex gammaZ = gamma(z);
+
+  return 0;
 }
 ```
 
@@ -65,6 +70,7 @@ int main() {
 
   auto g = [](Complex z) { return z*z };
 
+  return 0;
 }
 ```
 
@@ -80,10 +86,30 @@ int main() {
   auto g = [](Complex z) { return z*z };
   Complex dgdz = derivative(g, z); // Derivative of g evaluated at z.
 
+  return 0;
 }
 ```
 
 ### Complex Sequences in Cpplex
+
+Other functions, including discrete transforms and discrete entropy functions, will require complex sequences as input. 
+
+Complex sequences are currently supported in cpplex by using the ```cpp std::vector<Complex>``` datatype, but they will be later swapped out for a vectorized cpplex vector type. 
+
+And so, complex sequences can be implemented in cpplex as such:
+
+```cpp
+#include <Complex/Complex.hpp>
+#include <FFT/FFT.hpp>
+#include <iostream>
+
+int main() {
+  std::vector<Complex> X = {1 + 1_j, 2, 3 + 5_j};
+  std::vector<Complex> Y = fft(X);
+
+  return 0;
+}
+```
 
 ## Documentation
 
