@@ -10,6 +10,8 @@ Regardless of whether you need tools for scientific computing, signal processing
 
 ## Documentation
 
+## Benchmarks
+
 ## Future Plans 
 
 ## Acknowledgements
