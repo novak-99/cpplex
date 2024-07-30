@@ -142,4 +142,4 @@ Cpplex currently assumes independence for its complex distributions, which can b
 
 ## Acknowledgements
 
-While the various sources I used for each function can be found in the documentation section, here, I would like to specially thank both the [cppreference documentation page](cppreference.com) and the [scipy documentation page](https://docs.scipy.org/doc/scipy/reference/index.html#scipy-api). Both of these pages helped me see which functions are typically implemented in complex/scientific computing libraries, sources on how to implement them, and various other conventions.
+While the various sources I used for each function can be found in the documentation, here, I would like to specially thank both the [cppreference documentation page](cppreference.com) and the [scipy documentation page](https://docs.scipy.org/doc/scipy/reference/index.html#scipy-api). Both of these pages helped me see which functions are typically implemented in complex/scientific computing libraries, sources on how to implement them, and naming conventions.
