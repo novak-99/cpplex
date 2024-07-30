@@ -141,3 +141,5 @@ Currently, cpplex uses the `std::vector<Complex>` type for vectors and does not 
 Cpplex currently assumes independence for its complex distributions, which can be an erronous assumption. I plan to change the structure of distributions so that they can support correlation between the real and complex components, if it exists.
 
 ## Acknowledgements
+
+While the various sources I used for each function can be found in the documentation section, here, I would like to specially thank both the [cppreference documentation page](cppreference.com) and the [scipy documentation page](https://docs.scipy.org/doc/scipy/reference/index.html#scipy-api). Both of these pages helped me see which functions are typically implemented in complex/scientific computing libraries, sources on how to implement them, and various other conventions.
