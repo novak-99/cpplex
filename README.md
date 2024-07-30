@@ -134,7 +134,7 @@ The Lanczos approximation for the Gamma function and 15-point Gauss-Kronrod quad
 
 ### 2. Complex linear algebra module
 
-Currently, cpplex uses the `std::vector<Complex>` type for vectors and does not currently support a complex matrix type. I plan to add an optimized cpplex n-d arrays in the future.
+Currently, cpplex uses the `std::vector<Complex>` type for vectors and does not currently support a complex matrix type. I plan to add an optimized n-d array type in the future.
 
 ### 3. Bivariate Distributions
 
