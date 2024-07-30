@@ -130,8 +130,14 @@ One of the main reasons for this is that C++'s primitive multiplication and divi
 
 ### 1. Better approximations 
 
+The Lanczos approximation for the Gamma function and 15-point Gauss-Kronrod quadrature are both good approximation methods, but they could be better. I hope to swap these out in the future.
+
 ### 2. Complex linear algebra module
 
+Currently, cpplex uses the :code:`std::vector<Complex>` type for vectors and does not currently support a complex matrix type. I plan to add an optimized cpplex n-d arrays in the future.
+
 ### 3. Bivariate Distributions
+
+Cpplex currently assumes independence for its complex distributions, which is an erronous assumption. I plan to change the structure of distributions so that they can support correlation between the real and complex components, if it exists.
 
 ## Acknowledgements
