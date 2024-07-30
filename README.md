@@ -130,7 +130,7 @@ One of the main reasons for this is that C++'s primitive multiplication and divi
 
 ### 1. Better approximations 
 
-The Lanczos approximation for the Gamma function and 15-point Gauss-Kronrod quadrature are both good approximation methods, but they could be better. I hope to swap these out in the future.
+The Lanczos approximation for the Gamma function and 15-point Gauss-Kronrod quadrature integration are both good approximation methods, but they could be better. I hope to swap these out in the future.
 
 ### 2. Complex linear algebra module
 
