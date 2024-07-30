@@ -128,4 +128,10 @@ One of the main reasons for this is that C++'s primitive multiplication and divi
 
 ## Future Plans 
 
+### 1. Better approximations 
+
+### 2. Complex linear algebra module
+
+### 3. Bivariate Distributions
+
 ## Acknowledgements
