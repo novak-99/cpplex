@@ -138,6 +138,6 @@ Currently, cpplex uses the `std::vector<Complex>` type for vectors and does not 
 
 ### 3. Bivariate Distributions
 
-Cpplex currently assumes independence for its complex distributions, which is an erronous assumption. I plan to change the structure of distributions so that they can support correlation between the real and complex components, if it exists.
+Cpplex currently assumes independence for its complex distributions, which can be an erronous assumption. I plan to change the structure of distributions so that they can support correlation between the real and complex components, if it exists.
 
 ## Acknowledgements
