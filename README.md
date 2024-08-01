@@ -122,7 +122,7 @@ Tutorials for all cpplex modules and detailed documentation for every function i
 
 Cpplex is faster than the standard C++ complex library -- MUCH faster.
 
-For our benchmarks, complex division is 8 times faster, ... The full list of benchmarks are also available on the [read the docs page](https://cpplex.readthedocs.io/en/latest/).
+For our benchmarks, complex division and exponentiation are 9 times faster, the complex square root is 9 times faster, and inverse trig functions are up to 47 times faster. The full list of benchmarks is available [here](https://cpplex.readthedocs.io/en/latest/Benchmarks/Complex.html).
 
 One of the main reasons for this is that C++'s primitive multiplication and division operators use NaN checking. In most complex use cases however, this is unnecessary, and makes programs much slower.
 
