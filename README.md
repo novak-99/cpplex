@@ -1,6 +1,8 @@
 # cpplex
 
-![logo](https://github.com/novak-99/cpplex/blob/main/logo.png?raw=true)
+<p align="center">
+  <img src="https://github.com/novak-99/cpplex/blob/main/logo.png?raw=true" />
+</p>
 
 Complex analysis in C++ is slow, lackluster, and boring.
 
