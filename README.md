@@ -1,7 +1,7 @@
 # cpplex
 
 <p align="center">
-  <img src="https://github.com/novak-99/cpplex/blob/main/logo.png?raw=true" />
+  <img src="https://github.com/novak-99/cpplex/blob/main/logo.png?raw=true" style="border-radius: 50%;" />
 </p>
 
 Complex analysis in C++ is slow, lackluster, and boring.
