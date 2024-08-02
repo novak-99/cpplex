@@ -292,7 +292,6 @@ namespace cpplex {
 
             
         }
-        // https://www.appletonaudio.com/blog/2013/derivation-of-fast-dct-4-algorithm-based-on-dft/
         else if(type == 4){
             int n = X.size();
             std::vector<Complex> reX(n); 
@@ -454,7 +453,7 @@ namespace cpplex {
 
             
         }
-        // https://www.appletonaudio.com/blog/2013/derivation-of-fast-dct-4-algorithm-based-on-dft/
+
         else if(type == 4){
             int n = X.size();
             std::vector<Complex> reX(n); 
