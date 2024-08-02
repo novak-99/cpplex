@@ -1,5 +1,9 @@
 # cpplex
 
+<center>
+![logo](https://github.com/novak-99/cpplex/blob/main/logo.png?raw=true)
+</center>
+
 Complex analysis in C++ is slow, lackluster, and boring.
 
 Cpplex makes operations with complex numbers a lot faster, and also adds much more functionality!
