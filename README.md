@@ -126,7 +126,7 @@ For our benchmarks, complex division and exponentiation are **9 times faster**, 
 
 One of the main reasons for this is that C++'s primitive multiplication and division operators use NaN checking. In most complex use cases however, this is unnecessary, and makes programs much slower.
 
-For example, consider the following standard C++ code and the cpplex equivalent for a large sum to approximate the first zeta zero:
+For example, consider the following standard C++ code and the cpplex equivalent for a large sum to approximate the Riemann zeta function at its first zero:
 ```cpp
 void stdZetaSum(){
     const int N = 1e+9;
