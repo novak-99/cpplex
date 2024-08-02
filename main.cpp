@@ -39,14 +39,15 @@ using namespace std::complex_literals;
 //     return exp(-z*z);
 // }
 
-// I use this file for exeucting formal unit tests, benchmarks, and for quick and dirty testing 
+// I use this file for running formal unit tests, benchmarks, and for quick and dirty testing 
 
 int main(){
-    benchCpplexZetaSum();
+    // benchCpplexZetaSum();
 
     // std::cout << gamma(1 + 1i) << " " << gamma(1i) << "\n";
     // benchStdAtanh();
 
+    dct({1, 1_j}, 8);
     return 0; 
     // std::cout << arg(Complex(0.4, -0.0)) << "\n";
 

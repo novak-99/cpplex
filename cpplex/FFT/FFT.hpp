@@ -313,7 +313,10 @@ namespace cpplex {
 
             return Y; 
         }
-
+        else {
+            std::cerr << "No such type " << type << "! Only types I-IV are supported." << "\n";
+            return {}; 
+        }
     }
 
     constexpr std::vector<Complex> idct(const std::vector<Complex>& X, int type=2) noexcept {
@@ -321,6 +324,10 @@ namespace cpplex {
         else if(type == 2) return dct(X, 3); 
         else if(type == 3) return dct(X, 2); 
         else if(type == 4) return dct(X, 4); 
+        else {
+            std::cerr << "No such type " << type << "! Only types I-IV are supported." << "\n";
+            return {}; 
+        }
     }
 
     inline namespace {
@@ -468,6 +475,10 @@ namespace cpplex {
 
             return Y; 
         }
+        else {
+            std::cerr << "No such type " << type << "! Only types I-IV are supported." << "\n";
+            return {}; 
+        }
 
     }
 
@@ -476,6 +487,10 @@ namespace cpplex {
         else if(type == 2) return dst(X, 3); 
         else if(type == 3) return dst(X, 2); 
         else if(type == 4) return dst(X, 4); 
+        else {
+            std::cerr << "No such type " << type << "! Only types I-IV are supported." << "\n";
+            return {}; 
+        }
     }
 
     inline std::vector<Complex> dcht(const std::vector<Complex>& X) noexcept {
