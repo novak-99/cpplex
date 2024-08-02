@@ -126,6 +126,39 @@ For our benchmarks, complex division and exponentiation are **9 times faster**, 
 
 One of the main reasons for this is that C++'s primitive multiplication and division operators use NaN checking. In most complex use cases however, this is unnecessary, and makes programs much slower.
 
+For example, consider the following standard C++ code and the cpplex equivalent for a large sum to approximate the first zeta zero:
+```cpp
+void stdZetaSum(){
+    const int N = 1e+9;
+    std::complex<double> s = 0.5 + 14.1347251417346937904572519835625i;
+    std::complex<double> zetaTerm = std::complex<double>(1)/(std::complex<double>(1) - pow(2, std::complex<double>(1) - s));
+
+
+    std::complex<double> sum = 0; 
+    for(int n = 1; n <= N; n++){
+        std::complex<double> etaTerm = std::pow(-1, n-1) * 1 / (pow(n, s));
+
+        sum += etaTerm * zetaTerm;
+    }
+    std::cout << sum << "\n";
+}
+
+void cpplexZetaSum(){
+    const int N = 1e+9;
+    Complex s = 0.5 + 14.1347251417346937904572519835625_j;
+    Complex zetaTerm = 1/(1 - pow(2, 1 - s));
+
+    Complex sum = 0; 
+    for(int n = 1; n <= N; n++){
+        Complex etaTerm = pow(-1, n-1) * 1 / (pow(n, s));
+
+        sum += etaTerm * zetaTerm;
+    }
+    std::cout << sum << "\n";
+}
+```
+Whereas the former implementation takes an average of 46.788 seconds to run, the cpplex equivalent takes only **18.258 seconds**! Thus, the spped gains that cpplex provides over C++ are clear.
+
 ## Future Plans 
 
 ### 1. Better approximations 
