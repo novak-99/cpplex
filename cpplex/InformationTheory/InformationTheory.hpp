@@ -117,40 +117,59 @@ namespace cpplex{
         return crossEntropy_(probNorm(reX), probNorm(reY)) + crossEntropy_(probNorm(imX), probNorm(imY)); 
     }
 
-    constexpr double entropy(Complex (*f)(Complex), double a, double b) noexcept {
-        auto fe = [](Complex z, std::vector<Complex (*)(Complex)> fargs) { 
-            Complex fz = fargs[0](z); 
-            return fz * log(fz + eps); // exp(-x^2) can't handle very much leeway 
-        }; 
-        return integral(fe, a, b, {f}).real();  // MUST BE REAL. 
+    inline namespace {
+        constexpr double entropy_(Complex (*f)(Complex), double a, double b) noexcept {
+            auto fe = [](Complex z, std::vector<Complex (*)(Complex)> fargs) { 
+                Complex fz = fargs[0](z); 
+                return fz * log(fz + eps); // exp(-x^2) can't handle very much leeway 
+            }; 
+            return integral(fe, a, b, {f}).real();  // MUST BE REAL. 
+        }
+
+        constexpr double klDiv_(Complex (*f)(Complex), Complex (*g)(Complex), double a, double b) noexcept {
+            auto fe = [](Complex z, std::vector<Complex (*)(Complex)> fargs) { 
+                Complex fz = fargs[0](z); 
+                return fz * log(fz / (fargs[1](z)+ eps) + eps); 
+            }; 
+            return integral(fe, a, b, {f, g}).real();  // MUST BE REAL. 
+        }
+
+        constexpr double jsDiv_(Complex (*f)(Complex), Complex (*g)(Complex), double a, double b) noexcept {
+            auto fe1 = [](Complex z, std::vector<Complex (*)(Complex)> fargs) { 
+                Complex fz = fargs[0](z); 
+                Complex mz = 0.5 * (fz + fargs[1](z)); 
+                return fz * log(fz / (mz + eps) + eps); 
+            };
+
+            auto fe2 = [](Complex z, std::vector<Complex (*)(Complex)> fargs) { 
+                Complex gz = fargs[1](z); 
+                Complex mz = 0.5 * (fargs[0](z) + gz); 
+                return gz * log(gz / (mz + eps) + eps); 
+            };
+            return 0.5 * (integral(fe1, a, b, {f, g}).real() + integral(fe2, a, b, {f, g}).real()); 
+        }
+
+        constexpr double crossEntropy_(Complex (*f)(Complex), Complex (*g)(Complex), double a, double b) noexcept {
+            auto fe = [](Complex z, std::vector<Complex (*)(Complex)> fargs) { return -fargs[0](z) * log(fargs[1](z) + eps); }; // fe, for f_entropy. 
+            return integral(fe, a, b, {f, g}).real();  // MUST BE REAL. 
+        }
+
     }
 
-    constexpr double klDiv(Complex (*f)(Complex), Complex (*g)(Complex), double a, double b) noexcept {
-        auto fe = [](Complex z, std::vector<Complex (*)(Complex)> fargs) { 
-            Complex fz = fargs[0](z); 
-            return fz * log(fz / (fargs[1](z)+ eps) + eps); 
-        }; 
-        return integral(fe, a, b, {f, g}).real();  // MUST BE REAL. 
+    constexpr double entropy(Complex (*fr)(Complex), Complex (*fi)(Complex), double a, double b) noexcept {
+        return entropy_(fr, a, b) + entropy_(fi, a, b); // probably they have the same support.
     }
 
-    constexpr double jsDiv(Complex (*f)(Complex), Complex (*g)(Complex), double a, double b) noexcept {
-        auto fe1 = [](Complex z, std::vector<Complex (*)(Complex)> fargs) { 
-            Complex fz = fargs[0](z); 
-            Complex mz = 0.5 * (fz + fargs[1](z)); 
-            return fz * log(fz / (mz + eps) + eps); 
-        };
-
-        auto fe2 = [](Complex z, std::vector<Complex (*)(Complex)> fargs) { 
-            Complex gz = fargs[1](z); 
-            Complex mz = 0.5 * (fargs[0](z) + gz); 
-            return gz * log(gz / (mz + eps) + eps); 
-        };
-        return 0.5 * (integral(fe1, a, b, {f, g}).real() + integral(fe2, a, b, {f, g}).real()); 
+    constexpr double klDiv(Complex (*fr)(Complex), Complex (*fi)(Complex), Complex (*gr)(Complex), Complex (*gi)(Complex), double a, double b) noexcept {
+        return klDiv_(fr, gr, a, b) + klDiv_(fi, gi, a, b); // probably they have the same support.
     }
 
-    constexpr double crossEntropy(Complex (*f)(Complex), Complex (*g)(Complex), double a, double b) noexcept {
-        auto fe = [](Complex z, std::vector<Complex (*)(Complex)> fargs) { return -fargs[0](z) * log(fargs[1](z) + eps); }; // fe, for f_entropy. 
-        return integral(fe, a, b, {f, g}).real();  // MUST BE REAL. 
+    constexpr double jsDiv(Complex (*fr)(Complex), Complex (*fi)(Complex), Complex (*gr)(Complex), Complex (*gi)(Complex), double a, double b) noexcept {
+        return jsDiv_(fr, gr, a, b) + jsDiv_(fi, gi, a, b); // probably they have the same support.
+    }
+
+    constexpr double crossEntropy(Complex (*fr)(Complex), Complex (*fi)(Complex), Complex (*gr)(Complex), Complex (*gi)(Complex), double a, double b) noexcept {
+        return jsDiv_(fr, gr, a, b) + jsDiv_(fi, gi, a, b); // probably they have the same support.
     }
 
     inline double binaryEntropy(const double p) noexcept {
