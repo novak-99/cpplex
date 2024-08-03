@@ -24,8 +24,8 @@ Cpplex is a header only library, meaning no source files or shared object files 
 Begin by including the header files of the content you wish to use:
 
 ```cpp
-#include <Complex/Complex.hpp>
-#include <Special/Special.hpp>
+#include <Complex.hpp>
+#include <Special.hpp>
 #include <iostream>
 int main() {
 
@@ -36,8 +36,8 @@ int main() {
 Cpplex allows you to use standard C++ complex literals, as well as our own:
 
 ```cpp
-#include <Complex/Complex.hpp>
-#include <Special/Special.hpp>
+#include <Complex.hpp>
+#include <Special.hpp>
 #include <iostream>
 
 using namespace std::complex_literals; // for C++'s literals
@@ -53,8 +53,8 @@ int main() {
 And you can call functions using this type like so:
 
 ```cpp
-#include <Complex/Complex.hpp>
-#include <Special/Special.hpp>
+#include <Complex.hpp>
+#include <Special.hpp>
 #include <iostream>
 int main() {
   Complex z = 5 + 5_j;
@@ -71,7 +71,7 @@ Various functions in cpplex, including the derivative, integral, and continuous 
 You can either create complex functions by using lambdas or C++ functions:
 
 ```cpp
-#include <Complex/Complex.hpp>
+#include <Complex.hpp>
 #include <iostream>
 
 Complex f(Complex z) {
@@ -89,8 +89,8 @@ int main() {
 Then you can call the relevant function by passing your Complex function as a function pointer:
 
 ```cpp
-#include <Complex/Complex.hpp>
-#include <NumericalAnalysis/NumericalAnalysis.hpp>
+#include <Complex.hpp>
+#include <NumericalAnalysis.hpp>
 #include <iostream>
 
 int main() {
@@ -111,8 +111,8 @@ Complex sequences are currently supported in cpplex by using the ```std::vector<
 And so, complex sequences can be implemented in cpplex as such:
 
 ```cpp
-#include <Complex/Complex.hpp>
-#include <FFT/FFT.hpp>
+#include <Complex.hpp>
+#include <FFT.hpp>
 #include <iostream>
 
 int main() {

@@ -1,7 +1,7 @@
 #ifndef TRIANGULAR_HPP
 #define TRIANGULAR_HPP
 
-#include "Complex/Complex.hpp"
+#include "Complex.hpp"
 #include <vector>
 #include <cmath>
 #include <random>

@@ -1,10 +1,10 @@
 #include <iostream>
-#include <Complex/Complex.hpp>
+#include <Complex.hpp>
 #include <complex>
-#include "NumericalAnalysis/NumericalAnalysis.hpp"
-#include "FFT/FFT.hpp"
-#include "InformationTheory/InformationTheory.hpp"
-#include "Special/Special.hpp"
+#include "NumericalAnalysis.hpp"
+#include "FFT.hpp"
+#include "InformationTheory.hpp"
+#include "Special.hpp"
 #include "ContinuousDistribution/ContinuousDistribution.hpp"
 #include "ContinuousDistribution/Normal.hpp"
 #include "ContinuousDistribution/Gamma.hpp"
@@ -20,8 +20,8 @@
 #include "ContinuousDistribution/Pareto.hpp"
 #include "ContinuousDistribution/Chi.hpp"
 #include "ContinuousDistribution/Triangular.hpp"
-#include "Transforms/Transforms.hpp"
-#include "Signal/Signal.hpp"
+#include "Transforms.hpp"
+#include "Signal.hpp"
 #include "DiscreteDistribution/DiscreteDistribution.hpp"
 #include "DiscreteDistribution/Poisson.hpp"
 #include "DiscreteDistribution/Bernoulli.hpp"

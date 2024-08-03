@@ -3,8 +3,8 @@
 
 #include <vector> 
 #include <cmath>
-#include "Complex/Complex.hpp"
-#include "Special/Special.hpp"
+#include "Complex.hpp"
+#include "Special.hpp"
 
 namespace cpplex {
     constexpr Complex laplace(Complex (*f)(Complex), const Complex& z, const Complex& a = 1) noexcept {

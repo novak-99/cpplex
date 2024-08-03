@@ -1,7 +1,7 @@
 #ifndef PARETO_HPP
 #define PARETO_HPP
 
-#include "Complex/Complex.hpp"
+#include "Complex.hpp"
 #include <vector>
 #include <cmath>
 #include <random>

@@ -1,7 +1,7 @@
 #ifndef CONSTANTS_HPP
 #define CONSTANTS_HPP
 
-#include "Complex/Complex.hpp"
+#include "Complex.hpp"
 
 namespace cpplex{
     const Complex INF = std::numeric_limits<double>::infinity();

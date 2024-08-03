@@ -1,10 +1,10 @@
 #ifndef INFORMATIONTHEORY_HPP
 #define INFORMATIONTHEORY_HPP
 
-#include "Complex/Complex.hpp"
-#include "Constants/Constants.hpp"
-#include "FFT/FFT.hpp"
-#include "NumericalAnalysis/NumericalAnalysis.hpp"
+#include "Complex.hpp"
+#include "Constants.hpp"
+#include "FFT.hpp"
+#include "NumericalAnalysis.hpp"
 
 // ASSUMES P(X, Y) FOR INDEPENDENT X & Y. 
 // P(X, Y) = P(X)P(Y). 

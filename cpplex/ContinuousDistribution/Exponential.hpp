@@ -1,7 +1,7 @@
 #ifndef EXPONENTIAL_HPP
 #define EXPONENTIAL_HPP
 
-#include "Complex/Complex.hpp"
+#include "Complex.hpp"
 #include <vector>
 #include <cmath>
 #include <random>

@@ -2,9 +2,9 @@
 // #define SERIES_HPP
 
 // #include <cmath>
-// #include "Complex/Complex.hpp"
-// #include "NumericalAnalysis/NumericalAnalysis.hpp"
-// #include "Constants/Constants.hpp"
+// #include "Complex.hpp"
+// #include "NumericalAnalysis.hpp"
+// #include "Constants.hpp"
 
 // namespace cpplex{
 

@@ -1,7 +1,7 @@
 #ifndef WEIBULL_HPP
 #define WEIBULL_HPP
 
-#include "Complex/Complex.hpp"
+#include "Complex.hpp"
 #include <vector>
 #include <cmath>
 #include <random>

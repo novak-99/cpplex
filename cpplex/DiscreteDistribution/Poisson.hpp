@@ -1,8 +1,8 @@
 #ifndef POISSON_HPP
 #define POISSON_HPP
 
-#include "Complex/Complex.hpp"
-#include "Special/Special.hpp"
+#include "Complex.hpp"
+#include "Special.hpp"
 #include <vector>
 #include <cmath>
 #include <random>

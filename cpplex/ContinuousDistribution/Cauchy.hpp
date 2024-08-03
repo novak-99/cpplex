@@ -1,8 +1,8 @@
 #ifndef CAUCHY_HPP
 #define CAUCHY_HPP
 
-#include "Complex/Complex.hpp"
-#include "Special/Special.hpp"
+#include "Complex.hpp"
+#include "Special.hpp"
 #include <vector>
 #include <cmath>
 #include <random>

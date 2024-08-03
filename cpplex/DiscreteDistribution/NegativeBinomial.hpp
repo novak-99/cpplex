@@ -1,9 +1,9 @@
 #ifndef NEGATIVEBINOMIAL_HPP
 #define NEGATIVEBINOMIAL_HPP
 
-#include "Complex/Complex.hpp"
-#include "Special/Special.hpp"
-#include "InformationTheory/InformationTheory.hpp"
+#include "Complex.hpp"
+#include "Special.hpp"
+#include "InformationTheory.hpp"
 #include <vector>
 #include <cmath>
 #include <random>

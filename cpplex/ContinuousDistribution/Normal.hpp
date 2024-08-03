@@ -1,7 +1,7 @@
 #ifndef NORMAL_HPP
 #define NORMAL_HPP
 
-#include "Complex/Complex.hpp"
+#include "Complex.hpp"
 #include <vector>
 #include <cmath>
 #include <random>

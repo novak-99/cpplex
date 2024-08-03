@@ -1,7 +1,7 @@
 #ifndef CONTINUOUSDISTRIBUTION_HPP
 #define CONTINUOUSDISTRIBUTION_HPP
 
-#include "Complex/Complex.hpp"
+#include "Complex.hpp"
 
 #include <vector>
 

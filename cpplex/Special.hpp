@@ -3,8 +3,8 @@
 
 #include <vector>
 #include <utility>
-#include "Complex/Complex.hpp"
-#include "NumericalAnalysis/NumericalAnalysis.hpp"
+#include "Complex.hpp"
+#include "NumericalAnalysis.hpp"
 
 namespace cpplex{
 

@@ -1,8 +1,8 @@
 #ifndef NUMERICALANALYSIS_HPP
 #define NUMERICALANALYSIS_HPP
 
-#include "Complex/Complex.hpp"
-#include "Constants/Constants.hpp"
+#include "Complex.hpp"
+#include "Constants.hpp"
 
 namespace cpplex{
 

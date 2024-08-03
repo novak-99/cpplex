@@ -1,7 +1,7 @@
 #ifndef RAYLEIGH_HPP
 #define RAYLEIGH_HPP
 
-#include "Complex/Complex.hpp"
+#include "Complex.hpp"
 #include <vector>
 #include <cmath>
 #include <random>

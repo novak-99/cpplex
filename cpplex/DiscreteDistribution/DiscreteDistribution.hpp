@@ -1,7 +1,7 @@
 #ifndef DISCRETEDISTRIBUTION_HPP
 #define DISCRETEDISTRIBUTION_HPP
 
-#include "Complex/Complex.hpp"
+#include "Complex.hpp"
 
 #include <vector>
 

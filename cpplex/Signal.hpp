@@ -4,8 +4,8 @@
 #include <vector> 
 #include <cmath>
 #include <algorithm> 
-#include "Complex/Complex.hpp"
-#include "Transforms/Transforms.hpp"
+#include "Complex.hpp"
+#include "Transforms.hpp"
 
 namespace cpplex {
 
