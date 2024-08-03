@@ -6,7 +6,7 @@
 
 ![C++2b](https://img.shields.io/badge/C++-2023%20(2b)-blue.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Issues](https://img.shields.io/badge/issues-0%20open-purple)]([URL_TO_ISSUES](https://github.com/novak-99/cpplex/issues))
+[![Issues](https://img.shields.io/badge/issues-0%20open-red)](https://github.com/novak-99/cpplex/issues)
 
 Complex analysis in C++ is slow, lackluster, and boring.
 
