@@ -47,7 +47,13 @@ int main(){
     // std::cout << gamma(1 + 1i) << " " << gamma(1i) << "\n";
     // benchStdAtanh();
 
-    dct({1, 1_j}, 8);
+
+        auto fRe = [](Complex t) { return exp(-t * t); }; // Gaussian function.
+        auto fIm = [](Complex t) { return exp(-t * t); }; // Gaussian function.
+        auto gRe = [](Complex t) { return exp(-t * t); }; // Gaussian function. 
+        auto gIm = [](Complex t) { return exp(-t * t); }; // Gaussian function. 
+        std::cout << klDiv(fRe, fIm, gRe, gIm, NINF.real(), INF.real()) << "\n"; // Should be ~ 0 (epsilon value included in logs may influence precision).
+
     return 0; 
     // std::cout << arg(Complex(0.4, -0.0)) << "\n";
 

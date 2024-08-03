@@ -118,6 +118,12 @@ int main() {
 }
 ```
 
+### Compiling Code
+
+To compile code while using cpplex, remember to use the include the library's main directory and to compile with C++23:
+
+```g++ main.cpp -o main.o -I cpplex -std=c++2b```
+
 ## Documentation
 
 Tutorials for all cpplex modules and detailed documentation for every function is available on the read the docs page [here](https://cpplex.readthedocs.io/en/latest/).
