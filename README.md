@@ -122,7 +122,7 @@ int main() {
 
 To compile code while using cpplex, remember to include the library's main directory and to compile with C++23:
 
-```g++ main.cpp -o main.o -I cpplex -std=c++2b```
+```g++ main.cpp -I cpplex -o main.o -std=c++2b```
 
 ## Documentation
 
