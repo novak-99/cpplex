@@ -4,6 +4,7 @@
   <kbd><img src="https://github.com/novak-99/cpplex/blob/main/logo.png?raw=true"/></kbd>
 </p>
 
+![C++2b](https://img.shields.io/badge/C++-20xx%20(2b)-blue.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Issues](https://img.shields.io/badge/issues-0%20open-yellow)](URL_TO_ISSUES)
 
