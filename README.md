@@ -4,6 +4,8 @@
   <kbd><img src="https://github.com/novak-99/cpplex/blob/main/logo.png?raw=true"/></kbd>
 </p>
 
+[![Issues](https://img.shields.io/badge/issues-0%20open-yellow)](URL_TO_ISSUES)
+
 Complex analysis in C++ is slow, lackluster, and boring.
 
 Cpplex makes operations with complex numbers a lot faster, and also adds much more functionality!
