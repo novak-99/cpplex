@@ -1,7 +1,7 @@
 # cpplex
 
 <p align="center">
-  <img src="https://github.com/novak-99/cpplex/blob/main/logo.png?raw=true"/>
+  <kbd><img src="https://github.com/novak-99/cpplex/blob/main/logo.png?raw=true"/></kbd>
 </p>
 
 ![C++2b](https://img.shields.io/badge/C++-2023%20(2b)-blue.svg)
