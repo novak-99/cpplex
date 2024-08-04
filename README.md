@@ -9,11 +9,11 @@
 [![Issues](https://img.shields.io/badge/issues-0%20open-red)](https://github.com/novak-99/cpplex/issues)
 [![Docs](https://img.shields.io/badge/docs-rtd-green)](https://cpplex.readthedocs.io/en/latest/)
 
-Complex analysis in C++ is slow, lackluster, and boring.
+Complex analysis in C++ is slow and lackluster.
 
-Cpplex makes operations with complex numbers a lot faster, and also adds much more functionality!
+Cpplex makes operations with complex numbers a lot faster and adds much more functionality!
 
-Regardless of whether you need tools for scientific computing, signal processing, or numerical analysis, cpplex is the right library for you!
+Whether you need tools for scientific computing, signal processing, or numerical analysis, cpplex is the right library for you!
 
 ## Usage 
 
