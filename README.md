@@ -15,9 +15,7 @@ Cpplex makes operations with complex numbers a lot faster and adds much more fun
 
 Whether you need tools for scientific computing, signal processing, or numerical analysis, cpplex is the right library for you!
 
-## Usage 
-
-Cpplex is a header only library, meaning no source files or shared object files are required for compilation. 
+## Usage  
 
 ### The Cpplex Complex Datatype
 
@@ -124,6 +122,8 @@ int main() {
 ```
 
 ### Compiling Code
+
+Cpplex is a header only library, meaning no source files or shared object files are required for compilation.
 
 To compile code while using cpplex, remember to include the library's main directory and to compile with C++23:
 
