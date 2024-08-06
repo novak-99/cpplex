@@ -172,7 +172,7 @@ void cpplexZetaSum(){
     std::cout << sum << "\n";
 }
 ```
-Whereas the former implementation takes an average of 46.788 seconds to run, the cpplex equivalent takes only **18.258 seconds**! Thus, the speed gains that cpplex provides over C++ are clear.
+Whereas the former implementation takes an average of 46.788 seconds to run, the cpplex equivalent takes only **18.258 seconds**!
 
 ## Future Plans 
 
