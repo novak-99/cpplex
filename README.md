@@ -64,7 +64,7 @@ int main() {
 
 ### Functions in Cpplex
 
-Various functions in cpplex, including the derivative, integral, and continuous entropy functions, require you to use functions of complex inputs. Here's how cpplex handles them.
+Various functions in cpplex, including the derivative, integral, and continuous entropy functions, require you to use functions of complex inputs. Here is how cpplex handles them.
 
 You can either create complex functions by using lambdas or C++ functions:
 
@@ -84,7 +84,7 @@ int main() {
 }
 ```
 
-Then you can call the relevant function by passing your Complex function as a function pointer:
+Then you can call the relevant function by passing your complex function as a function pointer:
 
 ```cpp
 #include <Complex.hpp>
