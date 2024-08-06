@@ -41,7 +41,7 @@ Cpplex allows you to use standard C++ complex literals, as well as our own:
 using namespace std::complex_literals; // for C++'s literals
 
 int main() {
-  Complex z = 4 + 5_j;
+  Complex z = 5 + 5_j;
   Complex w = 5 + 5i;
 
   return 0;
