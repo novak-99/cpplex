@@ -9,7 +9,7 @@
 [![Issues](https://img.shields.io/badge/issues-0%20open-red)](https://github.com/novak-99/cpplex/issues)
 [![Docs](https://img.shields.io/badge/docs-rtd-green)](https://cpplex.readthedocs.io/en/latest/)
 
-Complex analysis in C++ is slow and lackluster.
+Complex analysis in C++ is slow and lacks a lot of features.
 
 Cpplex makes operations with complex numbers a lot faster and adds much more functionality!
 
