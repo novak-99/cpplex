@@ -106,7 +106,7 @@ Other functions, including discrete transforms and discrete entropy functions, w
 
 Complex sequences are currently supported in cpplex by using the ```std::vector<Complex>``` datatype, but they will be later swapped out for a vectorized cpplex vector type. 
 
-Complex sequences can be implemented in cpplex as such:
+Complex sequences can be implemented in cpplex by writing the following lines of code:
 
 ```cpp
 #include <Complex.hpp>
