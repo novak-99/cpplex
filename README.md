@@ -48,7 +48,7 @@ int main() {
 }
 ```
 
-And you can call functions on this type as such:
+And you can call functions on this datatype as such:
 
 ```cpp
 #include <Complex.hpp>
