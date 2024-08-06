@@ -131,7 +131,7 @@ To compile code while using cpplex, remember to include the library's main direc
 
 ## Documentation
 
-Tutorials for all cpplex modules and detailed documentation for every function are available on the read the docs page [here](https://cpplex.readthedocs.io/en/latest/).
+Tutorials for all cpplex modules and detailed documentation for every function are available on the Read the Docs page [here](https://cpplex.readthedocs.io/en/latest/).
 
 ## Benchmarks
 
